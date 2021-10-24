@@ -47,6 +47,7 @@ main {
   z-index: 1;
   animation: zoomIn;
   animation-duration: 4.5s;
+  animation-delay: 1s;
 }
 
 .avatar > img {
@@ -56,6 +57,7 @@ main {
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   animation: flip;
   animation-duration: 2s;
+  animation-delay: 1s;
 }
 
 h1 {
@@ -63,11 +65,13 @@ h1 {
   margin-top: 1.5rem;
   animation: lightSpeedInLeft;
   animation-duration: 3s;
+  animation-delay: 1s;
 }
 
 .github {
   animation: lightSpeedInRight;
   animation-duration: 3s;
+  animation-delay: 1s;
 }
 
 a {
@@ -84,6 +88,7 @@ p {
   margin-top: 2rem;
   animation: jackInTheBox;
   animation-duration: 4s;
+  animation-delay: 1s;
 }
 
 ul {
@@ -97,22 +102,22 @@ ul {
 .youtube {
   animation: bounceInDown;
   animation-duration: 1s;
-  animation-delay: 0.5s;
+  animation-delay: 1s;
 }
 .facebook {
   animation: bounceInLeft;
   animation-duration: 1s;
-  animation-delay: 1s;
+  animation-delay: 1.5s;
 }
 .instagram {
   animation: bounceInRight;
   animation-duration: 1s;
-  animation-delay: 1.5s;
+  animation-delay: 2s;
 }
 .twitter {
   animation: bounceInUp;
   animation-duration: 1s;
-  animation-delay: 2s;
+  animation-delay: 2.5s;
 }
 
 @media (min-width: 720px) {
