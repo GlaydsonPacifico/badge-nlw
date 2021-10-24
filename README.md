@@ -12,7 +12,7 @@ This project was developed with the following technologies:
 ## 💻 Project
 
 Nlw Origin-2021 creating a virtual badge
-<a href="https://badge-nlw-cldh6u8rr-glaydsonpacifico.vercel.app/" target="_blank">
+<a href="https://badge-nlw-glaydsonpacifico.vercel.app/" target="_blank">
 my virtual badge
 </a>
 
