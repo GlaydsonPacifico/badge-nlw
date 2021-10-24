@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import 'animate.css';
 
 * {
   margin: 0;
@@ -20,9 +21,10 @@ body {
 }
 
 main {
-  background: url(images/background.svg);
-  width: 375px;
-  height: 812px;
+  background: url(images/background.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
 }
 
 .container {
@@ -43,6 +45,8 @@ main {
   position: absolute;
   top: -15px;
   z-index: 1;
+  animation: zoomIn;
+  animation-duration: 4.5s;
 }
 
 .avatar > img {
@@ -50,11 +54,20 @@ main {
   height: 11.5rem;
   object-fit: cover;
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  animation: flip;
+  animation-duration: 2s;
 }
 
 h1 {
   font-size: 1.5rem;
   margin-top: 1.5rem;
+  animation: lightSpeedInLeft;
+  animation-duration: 3s;
+}
+
+.github {
+  animation: lightSpeedInRight;
+  animation-duration: 3s;
 }
 
 a {
@@ -69,6 +82,8 @@ a {
 
 p {
   margin-top: 2rem;
+  animation: jackInTheBox;
+  animation-duration: 4s;
 }
 
 ul {
@@ -78,4 +93,52 @@ ul {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
+}
+.youtube {
+  animation: bounceInDown;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+}
+.facebook {
+  animation: bounceInLeft;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+.instagram {
+  animation: bounceInRight;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+}
+.twitter {
+  animation: bounceInUp;
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
+
+@media (min-width: 720px) {
+  main {
+    background: url(images/background-desktop.svg) no-repeat center/cover;
+  }
+
+  li:hover {
+    transform: scale(1.3);
+  }
+
+  .avatar {
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 960px) {
+  main {
+    background: url(images/background-desktop.svg) no-repeat center/cover;
+  }
+
+  li:hover {
+    transform: scale(1.3);
+  }
+
+  .avatar {
+    padding: 0.5rem;
+  }
 }
